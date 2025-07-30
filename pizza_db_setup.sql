@@ -1,8 +1,12 @@
 -- 1. Créer une base
-CREATE DATABASE pizza_db;
+--CREATE DATABASE pizza_db;
+--USE pizza_db;
+
+-- quelque amélioration
+CREATE DATABASE IF NOT EXISTS pizza_db
+  DEFAULT CHARACTER SET utf8mb4
+  DEFAULT COLLATE utf8mb4_unicode_ci;
 USE pizza_db;
-
-
 
 -- 2. Créer la table
 CREATE TABLE pizza_sales (
